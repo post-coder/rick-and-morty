@@ -22,7 +22,7 @@ export default {
 
     <input v-model="store.characterName" type="text" placeholder="Scrivi il nome di un personaggio " @keyup.enter="$emit('searchCharacter')">
     
-    <select name="status" id="status" v-model="store.characterParameters.status">
+    <select name="status" id="status" v-model="store.characterStatus">
       <option value=""></option>
       <option value="alive">Vivo</option>
       <option value="dead">Morto</option>
