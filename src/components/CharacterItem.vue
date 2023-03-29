@@ -17,7 +17,7 @@ export default {
 </script>
 
 <template>
-  <div class="character" :class="character.status == 'Alive' ? 'alive' : 'dead'">
+  <div class="character" :class="character.status == 'Alive' ? 'alive' : 'dead'" @click="$emit('clickRiquadro')">
 
     <img :src="character.image" alt="">
     <strong>

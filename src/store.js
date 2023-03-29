@@ -9,10 +9,19 @@ export const store = reactive({
 
   // fine della sintassi obbligatoria
   // da qua in poi possiamo indicare tutte le proprietà e i valori che vogliamo.
-  userName: "Gabriel",
+  // userName: "Gabriel",
 
   // prepariamo una variabile che conterrà le informazioni che riceviamo dalla chiamata API
   characters: [],
+
+
+  // ci segnamo la chiamata API da fare
+  APIcall: 'https://rickandmortyapi.com/api/character',
+
+  // predispongo una proprietà che verrà aggiornata in base alla ricerca dell'utente
+  characterName: "",
+
+  characterStatus: "",
 
 });
 
